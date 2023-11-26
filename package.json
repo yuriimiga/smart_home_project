@@ -1,7 +1,7 @@
 {
-  "name": "basa_project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "smart_home_projct",
+  "version": "1.0.0",
+  "author": "Miga Yurii <migayura340@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "tailwindcss -i ./src/source.css -o ./src/style.css && vite",
