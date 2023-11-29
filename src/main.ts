@@ -3,7 +3,7 @@ import "./style.css"
 class DbManipulator {
     url: string;
     constructor(url: string) {
-        this.url = url;
+        this.url = "";
     }
 
     async allDevices() {
@@ -287,7 +287,7 @@ const creat_room_input = <HTMLInputElement>document.getElementById("creat_modal_
 
 (<HTMLElement>document.getElementById("creat_modal__rooms__add_btn")).addEventListener("click", async () => {
     if(/\w/.test(creat_room_input.value)) {
-        await db_manipulator.addRoom(creat_room_input.value );
+        await db_manipulator.addRoom(creat_room_input.value);
         renderRooms(rooms_selector);
     }
 })
