@@ -3,7 +3,7 @@ import "./style.css"
 class DbManipulator {
     url: string;
     constructor(url: string) {
-        this.url = "";
+        this.url = url;
     }
 
     async allDevices() {
@@ -100,7 +100,7 @@ class DbManipulator {
 
 }
 
-const db_manipulator = new DbManipulator("http://localhost:3000");
+const db_manipulator = new DbManipulator("");
 
 async function renderRooms(data: HTMLElement) {
     data.innerHTML = "";
